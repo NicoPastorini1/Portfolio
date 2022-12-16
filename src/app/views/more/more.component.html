@@ -1,0 +1,68 @@
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">Nicolas Pastorini</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb">Gracias por el interés en mi perfil.</p>
+        <p class="class lead mb-4">Desde el principio oriente mi carrera al Analisis de datos y la Programación,
+            teniendo interés en el negocio de los productos y el desarrollo de aplicaciones escalables y robustas.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button (click)="showDialogDA()" type="button" class="btn btn-outline-secondary btn-lg px-4">Analista de
+                Datos</button>
+            <button (click)="showDialogFS()" type="button" class="btn btn-outline-secondary btn-lg px-4">Desarrollador
+                FullStack</button>
+        </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+        <button width="100px" routerLink="/projects" class="btn btn-primary mb-5"> Ver todos los proyectos </button>
+    </div>
+</div>
+
+<p-dialog  [(visible)]="displayDA" [style]="{width: '50vw'}">
+    <ng-template pTemplate="header">
+        <div class="col">
+            <div class="row justify-content-center text-lg font-bold text-900">Analista de Datos</div>
+            <div class="row text-900">
+                +1 año de experiencia como Analista de datos en el rubro financiero, crediticio y publicidad digital.
+                Realizando tareas de soporte, actualizacion y soporte de dashboard, creando presentaciones en PPT para gerencia y clientes.
+                <br> Mis herramientas:
+            </div>
+            <div class="col mt-3 flex justify-content-evenly">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Power BI" width="25px" height="25px" src="https://cdn.svgporn.com/logos/microsoft-power-bi.svg">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Data Studio" width="25px" height="25px" src="https://cdn.svgporn.com/logos/google-data-studio.svg">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="SQL" width="25px" height="25px" src="https://www.svgrepo.com/show/373547/db.svg">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Sheets" width="25px" height="25px" src="https://lh3.ggpht.com/e3oZddUHSC6EcnxC80rl_6HbY94sM63dn6KrEXJ-C4GIUN-t1XM0uYA_WUwyhbIHmVMH=w300">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Storytelling" width="25px" height="25px" src="https://www.svgrepo.com/show/72242/idea.svg">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Google Scripts" width="25px" height="25px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/512px-Google_Apps_Script.svg.png?20221103122014">
+            </div>
+            <div class="col mt-3 text-900">
+                Proyecto:
+                <a target="_blank" href="https://www.linkedin.com/posts/nicolas-pastorini_dataanalytics-activity-6846621328636747776-QA-J?utm_source=share&utm_medium=member_desktop"><img class="mr-1 mx-3" tooltipPosition="bottom" pTooltip="Ir al proyecto" width="15px" height="15px" src="https://www.svgrepo.com/show/51864/link.svg"></a>
+            </div>
+        </div>
+    </ng-template>
+</p-dialog>
+<p-dialog  [(visible)]="displayFS" [style]="{width: '50vw'}">
+    <ng-template pTemplate="header">
+        <div class="col">
+            <div class="row justify-content-center text-lg font-bold text-900">Desarrollador Full Stack</div>
+            <div class="row text-900">
+                Estudio programación web hace dos años, demuestro interés en aplicaciones robustas, escalables, capaces de manejar grandes volumenes de datos y buena experiencia del usuario.
+                Por eso eligí Angular y Java para mi stack principal, de todas formas pudiendome adaptar a aplicaciones de desarrollo mas rapido como React, Next JS, Express.
+                <br> Mis herramientas:
+            </div>
+            <div class="col mt-3 flex justify-content-evenly">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Angular" width="25px" height="25px" src="https://www.svgrepo.com/show/349591/angular.svg">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="RxJs" width="25px" height="25px" src="https://cdn.svgporn.com/logos/reactivex.svg">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Bootstrap" width="25px" height="25px" src="https://cdn.svgporn.com/logos/bootstrap.svg">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="PrimeNG" width="25px" height="25px" src="https://i0.wp.com/www.primefaces.org/wp-content/uploads/2018/05/primeng-logo.png?fit=1000%2C1000&ssl=1&w=640">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Angular Material" width="25px" height="25px" src="data:image/png;base64,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">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Java" width="25px" height="25px" src="https://cdn.svgporn.com/logos/java.svg">        
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Springboot" width="25px" height="25px" src="https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H_400x400.png">
+                <img class="mr-1" tooltipPosition="bottom" pTooltip="Postman" width="25px" height="25px" src="https://www.svgrepo.com/show/354202/postman-icon.svg">
+            </div>
+            <div class="col mt-3 text-900">
+                Proyectos:
+                <a target="_blank" href="https://github.com/NicoPastorini1"><img class="mr-1 mx-3" tooltipPosition="bottom" pTooltip="Ir a los proyecto" width="15px" height="15px" src="https://www.svgrepo.com/show/51864/link.svg"></a>
+            </div>
+        </div>
+    </ng-template>
+</p-dialog>

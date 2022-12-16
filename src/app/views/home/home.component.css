@@ -5,8 +5,14 @@
     
 }
 
-@media (max-width: 77git0px) {
+@media (max-width: 770px) {
     .img {
         display: none;
     }
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 1rem;
 }
